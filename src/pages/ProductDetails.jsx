@@ -12,10 +12,10 @@ const ProductDetails = () => {
 
   const allProducts = [
     // Home & Hardware
-    { id: 'h1', title: 'Industrial Door Hinges, Heavy Duty Steel', brand: 'Generic B2B', image: '/images/door_hinges.png', originalPrice: '23672.00', discountedPrice: '16081.01', discount: 32, options: 2 },
-    { id: 'h2', title: 'Box of Brass Screws for Construction', brand: 'Generic B2B', image: '/images/brass_screws.png', originalPrice: '302.00', discountedPrice: '183.56', discount: 39, options: 8 },
-    { id: 'h3', title: 'Heavy Duty Industrial Door Lock, Secure', brand: 'Generic B2B', image: '/images/door_lock.png', originalPrice: '454.00', discountedPrice: '308.41', discount: 32, options: 3 },
-    { id: 'h4', title: 'Premium Modern Door Handle, Brushed Metal', brand: 'Generic B2B', image: '/images/door_handle.png', originalPrice: '172.00', discountedPrice: '116.84', discount: 32, options: 1 },
+    { id: 'h1', title: 'Industrial Door Hinges, Heavy Duty Steel', brand: 'Generic B2B', image: 'images/door_hinges.png', originalPrice: '23672.00', discountedPrice: '16081.01', discount: 32, options: 2 },
+    { id: 'h2', title: 'Box of Brass Screws for Construction', brand: 'Generic B2B', image: 'images/brass_screws.png', originalPrice: '302.00', discountedPrice: '183.56', discount: 39, options: 8 },
+    { id: 'h3', title: 'Heavy Duty Industrial Door Lock, Secure', brand: 'Generic B2B', image: 'images/door_lock.png', originalPrice: '454.00', discountedPrice: '308.41', discount: 32, options: 3 },
+    { id: 'h4', title: 'Premium Modern Door Handle, Brushed Metal', brand: 'Generic B2B', image: 'images/door_handle.png', originalPrice: '172.00', discountedPrice: '116.84', discount: 32, options: 1 },
     
     // Paints & Coatings
     { id: 'p1', title: 'Birla Opus Exterior Economy Style Power Bright White (9900) 10L', brand: 'Birla Opus', image: 'https://images.unsplash.com/photo-1562184552-997c461abbe6?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', originalPrice: '2490.00', discountedPrice: '1730.52', discount: 31, options: 16 },
@@ -24,10 +24,10 @@ const ProductDetails = () => {
     { id: 'p4', title: 'Birla Opus Exterior Premium Calista Perfect Choice Primer White 10L', brand: 'Birla Opus', image: 'https://images.unsplash.com/photo-1589407335682-1262d1cfa978?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', originalPrice: '2250.00', discountedPrice: '1602.83', discount: 29, options: 4 },
     
     // Tools & Lighting
-    { id: 'd1', title: 'High Power LED Outdoor Floodlight', brand: 'Philips', image: '/images/led_floodlight.png', originalPrice: '1655.00', discountedPrice: '1514.49', discount: 8, options: 16 },
-    { id: 'd2', title: 'High Quality Chrome Wrench Set', brand: 'Taparia', image: '/images/wrench_set.png', originalPrice: '3400.00', discountedPrice: '2250.00', discount: 34, options: 1 },
-    { id: 'd3', title: 'Premium Industrial Drill Machine', brand: 'Bosch', image: '/images/drill_machine.png', originalPrice: '625.00', discountedPrice: '498.40', discount: 20, options: 1 },
-    { id: 'd4', title: 'Modern Safety Headphones for Construction', brand: '3M', image: '/images/safety_headphones.png', originalPrice: '1875.00', discountedPrice: '1459.60', discount: 22, options: 1 },
+    { id: 'd1', title: 'High Power LED Outdoor Floodlight', brand: 'Philips', image: 'images/led_floodlight.png', originalPrice: '1655.00', discountedPrice: '1514.49', discount: 8, options: 16 },
+    { id: 'd2', title: 'High Quality Chrome Wrench Set', brand: 'Taparia', image: 'images/wrench_set.png', originalPrice: '3400.00', discountedPrice: '2250.00', discount: 34, options: 1 },
+    { id: 'd3', title: 'Premium Industrial Drill Machine', brand: 'Bosch', image: 'images/drill_machine.png', originalPrice: '625.00', discountedPrice: '498.40', discount: 20, options: 1 },
+    { id: 'd4', title: 'Modern Safety Headphones for Construction', brand: '3M', image: 'images/safety_headphones.png', originalPrice: '1875.00', discountedPrice: '1459.60', discount: 22, options: 1 },
     
     // Products.jsx
     { id: 'HV-SW-001', title: 'Crabtree Athena 10A 1 Way Switch (Box of 20)', brand: 'Havells', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBGMIuOf3NfIgvssHJMJSV_sm5NiFYhxQc6hIEbL23XO8anOwjDPp1OAKgAHtilWIISpyl34WB53BA47Hc0PSBzRGhzMFKfCJ3_DO_Gqlt9I5U4CQQGY0NulfCyIqyz0zZr0jlAY6qxr1mD1bwfK35uA9MSF8MxMpvVTNOtikkGY7-ckSud_uWkvFdG1h0-8FghyPBdBnP9TdegQEC6u4a4fDiC0w5Tfyc2KOw7eKbhYnp9oxzvm7KgULyXYc8GflSZ6jXscaLbRlba', originalPrice: '2050.00', discountedPrice: '1850.00', discount: 10, options: 20 },

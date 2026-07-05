@@ -6,9 +6,9 @@ const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    '/images/sliding_banner_1_1783228965984.png',
-    '/images/sliding_banner_2_1783228976096.png',
-    '/images/sliding_banner_3_1783228987254.png'
+    'images/sliding_banner_1_1783228965984.png',
+    'images/sliding_banner_2_1783228976096.png',
+    'images/sliding_banner_3_1783228987254.png'
   ];
 
   useEffect(() => {
@@ -19,10 +19,10 @@ const Home = () => {
   }, []);
 
   const hardwareProducts = [
-    { id: 'h1', title: 'Industrial Door Hinges, Heavy Duty Steel', image: '/images/door_hinges.png', originalPrice: '23672.00', discountedPrice: '16081.01', discount: 32, options: 2 },
-    { id: 'h2', title: 'Box of Brass Screws for Construction', image: '/images/brass_screws.png', originalPrice: '302.00', discountedPrice: '183.56', discount: 39, options: 8 },
-    { id: 'h3', title: 'Heavy Duty Industrial Door Lock, Secure', image: '/images/door_lock.png', originalPrice: '454.00', discountedPrice: '308.41', discount: 32, options: 3 },
-    { id: 'h4', title: 'Premium Modern Door Handle, Brushed Metal', image: '/images/door_handle.png', originalPrice: '172.00', discountedPrice: '116.84', discount: 32, options: 1 },
+    { id: 'h1', title: 'Industrial Door Hinges, Heavy Duty Steel', image: 'images/door_hinges.png', originalPrice: '23672.00', discountedPrice: '16081.01', discount: 32, options: 2 },
+    { id: 'h2', title: 'Box of Brass Screws for Construction', image: 'images/brass_screws.png', originalPrice: '302.00', discountedPrice: '183.56', discount: 39, options: 8 },
+    { id: 'h3', title: 'Heavy Duty Industrial Door Lock, Secure', image: 'images/door_lock.png', originalPrice: '454.00', discountedPrice: '308.41', discount: 32, options: 3 },
+    { id: 'h4', title: 'Premium Modern Door Handle, Brushed Metal', image: 'images/door_handle.png', originalPrice: '172.00', discountedPrice: '116.84', discount: 32, options: 1 },
   ];
 
   const paintProducts = [
@@ -33,10 +33,10 @@ const Home = () => {
   ];
 
   const dealProducts = [
-    { id: 'd1', title: 'High Power LED Outdoor Floodlight', image: '/images/led_floodlight.png', originalPrice: '1655.00', discountedPrice: '1514.49', discount: 8, options: 16 },
-    { id: 'd2', title: 'High Quality Chrome Wrench Set', image: '/images/wrench_set.png', originalPrice: '3400.00', discountedPrice: '2250.00', discount: 34, options: 1 },
-    { id: 'd3', title: 'Premium Industrial Drill Machine', image: '/images/drill_machine.png', originalPrice: '625.00', discountedPrice: '498.40', discount: 20, options: 1 },
-    { id: 'd4', title: 'Modern Safety Headphones for Construction', image: '/images/safety_headphones.png', originalPrice: '1875.00', discountedPrice: '1459.60', discount: 22, options: 1 },
+    { id: 'd1', title: 'High Power LED Outdoor Floodlight', image: 'images/led_floodlight.png', originalPrice: '1655.00', discountedPrice: '1514.49', discount: 8, options: 16 },
+    { id: 'd2', title: 'High Quality Chrome Wrench Set', image: 'images/wrench_set.png', originalPrice: '3400.00', discountedPrice: '2250.00', discount: 34, options: 1 },
+    { id: 'd3', title: 'Premium Industrial Drill Machine', image: 'images/drill_machine.png', originalPrice: '625.00', discountedPrice: '498.40', discount: 20, options: 1 },
+    { id: 'd4', title: 'Modern Safety Headphones for Construction', image: 'images/safety_headphones.png', originalPrice: '1875.00', discountedPrice: '1459.60', discount: 22, options: 1 },
   ];
 
   const visualCategories = [
@@ -45,14 +45,14 @@ const Home = () => {
     { name: 'Plumbing', image: 'https://images.unsplash.com/photo-1585435421671-0c16764628ce?w=150&q=80' },
     { name: 'Electrical', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=150&q=80' },
     { name: 'Lighting', image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=150&q=80' },
-    { name: 'Fans', image: '/images/fan_category_1783228996076.png' },
+    { name: 'Fans', image: 'images/fan_category_1783228996076.png' },
     { name: 'Plywood and Boards', image: 'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=150&q=80' },
-    { name: 'Laminates', image: '/images/laminates_category_1783229006980.png' },
-    { name: 'Hardware and Fittings', image: '/images/hardware_category_1783229017545.png' },
+    { name: 'Laminates', image: 'images/laminates_category_1783229006980.png' },
+    { name: 'Hardware and Fittings', image: 'images/hardware_category_1783229017545.png' },
     { name: 'Paints, Putty and Coatings', image: 'https://images.unsplash.com/photo-1562184552-997c461abbe6?w=150&q=80' },
     { name: 'Tiles', image: 'https://images.unsplash.com/photo-1523413363574-c30aa1c2a516?w=150&q=80' },
     { name: 'Kitchen', image: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=150&q=80' },
-    { name: 'Heating and AC', image: '/images/heating_ac_category_1783229027909.png' },
+    { name: 'Heating and AC', image: 'images/heating_ac_category_1783229027909.png' },
   ];
 
   const popularBrands = [
