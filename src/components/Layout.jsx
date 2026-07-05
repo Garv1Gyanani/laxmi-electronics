@@ -101,23 +101,48 @@ const Layout = () => {
       </header>
 
       {/* Mobile Bottom Navigation (Hidden on Desktop) */}
-      <nav className="md:hidden fixed bottom-0 left-0 w-full bg-surface-container-lowest border-t border-outline-variant z-50 pb-safe shadow-[0_-2px_10px_rgba(0,0,0,0.05)] flex justify-around items-center h-16 px-2">
-        <a className="flex flex-col items-center justify-center w-full h-full text-primary font-bold" href="#">
-          <span aria-hidden="true" className="material-symbols-outlined mb-1 text-[24px]" data-icon="home">home</span>
-          <span className="text-[10px] font-semibold leading-none">Home</span>
-        </a>
-        <a className="flex flex-col items-center justify-center w-full h-full text-on-surface-variant hover:text-primary transition-colors" href="#">
-          <span aria-hidden="true" className="material-symbols-outlined mb-1 text-[24px]" data-icon="category">category</span>
-          <span className="text-[10px] font-medium leading-none">Categories</span>
-        </a>
-        <a className="flex flex-col items-center justify-center w-full h-full text-on-surface-variant hover:text-primary transition-colors relative" href="#">
-          <span aria-hidden="true" className="material-symbols-outlined mb-1 text-[24px]" data-icon="request_quote">request_quote</span>
-          <span className="text-[10px] font-medium leading-none">Quote</span>
-        </a>
-        <a className="flex flex-col items-center justify-center w-full h-full text-on-surface-variant hover:text-primary transition-colors" href="#">
-          <span aria-hidden="true" className="material-symbols-outlined mb-1 text-[24px]" data-icon="account_circle">account_circle</span>
-          <span className="text-[10px] font-medium leading-none">Profile</span>
-        </a>
+      <nav className="md:hidden fixed bottom-0 left-0 w-full bg-white border-t border-outline-variant/40 z-50 pb-safe shadow-[0_-4px_16px_rgba(0,0,0,0.06)] flex justify-around items-center h-16 px-2">
+        <Link 
+          to="/" 
+          className={`flex flex-col items-center justify-center w-full h-full transition-all duration-200 ${
+            location.pathname === '/' ? 'text-[#CF0F0F] font-black' : 'text-on-surface-variant hover:text-[#CF0F0F]'
+          }`}
+        >
+          <span className="material-symbols-outlined mb-0.5 text-[24px]">home</span>
+          <span className="text-[10px] leading-none">Home</span>
+        </Link>
+        <Link 
+          to="/products" 
+          className={`flex flex-col items-center justify-center w-full h-full transition-all duration-200 ${
+            location.pathname === '/products' ? 'text-[#CF0F0F] font-black' : 'text-on-surface-variant hover:text-[#CF0F0F]'
+          }`}
+        >
+          <span className="material-symbols-outlined mb-0.5 text-[24px]">grid_view</span>
+          <span className="text-[10px] leading-none">Catalogue</span>
+        </Link>
+        <Link 
+          to="/cart" 
+          className={`flex flex-col items-center justify-center w-full h-full transition-all duration-200 relative ${
+            location.pathname === '/cart' ? 'text-[#CF0F0F] font-black' : 'text-on-surface-variant hover:text-[#CF0F0F]'
+          }`}
+        >
+          <span className="material-symbols-outlined mb-0.5 text-[24px]">shopping_cart</span>
+          {cartCount > 0 && (
+            <span className="absolute top-2 right-6 bg-[#CF0F0F] text-white text-[9px] font-black min-w-[15px] h-[15px] flex items-center justify-center rounded-full border border-white">
+              {cartCount}
+            </span>
+          )}
+          <span className="text-[10px] leading-none">Quote Cart</span>
+        </Link>
+        <Link 
+          to="/support" 
+          className={`flex flex-col items-center justify-center w-full h-full transition-all duration-200 ${
+            location.pathname === '/support' ? 'text-[#CF0F0F] font-black' : 'text-on-surface-variant hover:text-[#CF0F0F]'
+          }`}
+        >
+          <span className="material-symbols-outlined mb-0.5 text-[24px]">contact_support</span>
+          <span className="text-[10px] leading-none">Support</span>
+        </Link>
       </nav>
 
       <main className="flex-grow pb-20 md:pb-0">
